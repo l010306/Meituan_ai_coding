@@ -1,4 +1,4 @@
-# 🚀 客户端开启 | 🍔 美团 AI-Native 社团招新平台 🤖
+# AI-Native 社团招新平台
 
 <div align="center">
   <p>
