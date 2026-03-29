@@ -1,9 +1,10 @@
-# 客户端快速启动 | 🍔 美团 AI-Native 社团招新平台 🤖
+# 🚀 客户端开启 | 🍔 美团 AI-Native 社团招新平台 🤖
 
 <div align="center">
   <p>
-    <a href="http://47.242.249.27/login"><img src="https://img.shields.io/badge/技术栈-Spring%20Boot%20%2B%20React%20%2B%20Vite-61dafb?style=for-the-badge&logo=react" alt="技术栈"></a>
-    <a href="https://platform.deepseek.com/"><img src="https://img.shields.io/badge/AI%20动力-DeepSeek%20%2B%20RAG-orange?style=for-the-badge&logo=openai" alt="AI 动力"></a>
+    <strong>客户端开启：</strong> 
+    <a href="http://47.242.249.27/login"><img src="https://img.shields.io/badge/学生客户端-Live%20Demo-blue?style=for-the-badge&logo=react" alt="学生客户端"></a>
+    <a href="http://47.242.249.27/admin/"><img src="https://img.shields.io/badge/社团客户端-Admin%20Portal-green?style=for-the-badge&logo=alibabacloud" alt="社团客户端"></a>
   </p>
 </div>
 
