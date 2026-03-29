@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  # 优先尝试使用内存数据库 H2，以便您能“一键启动”看到效果
+  # 如果要切换回 MySQL，请注释掉 H2 配置并取消 MySQL 配置的注释
+  datasource:
+    url: jdbc:h2:mem:recruitment;MODE=MySQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    # url: jdbc:mysql://127.0.0.1:3306/recruitment?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    # username: root
+    # password: 
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # 自动运行 SQL 脚本初始化 H2 内存表
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+llm:
+  enabled: false
+  api-key: ${OPENAI_API_KEY:mock_key}
+  base-url: ${OPENAI_BASE_URL:https://api.openai.com/v1}
+  model-name: gpt-3.5-turbo
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

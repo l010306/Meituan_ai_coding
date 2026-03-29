@@ -1,0 +1,4 @@
+export default {
+  navigationBarTitleText: '社团详情',
+  navigationStyle: 'custom'
+}

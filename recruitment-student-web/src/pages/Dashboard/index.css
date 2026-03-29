@@ -1,0 +1,310 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  padding: 16px;
+  gap: 16px;
+}
+
+.sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  flex-shrink: 0;
+
+  .sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  margin-bottom: 32px;
+}
+
+.logo-modern {
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.25);
+}
+
+.sidebar-header h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+  .nav-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s;
+
+      &:hover {
+        background: var(--item-hover);
+        color: var(--text-primary);
+      }
+
+      &.active {
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      }
+
+      .nav-badge {
+        margin-left: auto;
+        background: #ef4444;
+        color: white;
+        font-size: 10px;
+        font-weight: 800;
+        padding: 2px 6px;
+        border-radius: 20px;
+        min-width: 18px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
+      }
+    }
+  }
+
+  .sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid var(--glass-border);
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .avatar {
+        width: 36px;
+        height: 36px;
+        background: var(--secondary);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        .name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+        .role { font-size: 11px; color: var(--text-secondary); }
+      }
+    }
+
+    .logout-btn {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      &:hover { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+    }
+  }
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--main-bg);
+  border-bottom: 1px solid var(--glass-border);
+  margin-bottom: 8px;
+
+  .search-pill {
+    width: 320px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+    .icon { color: var(--text-secondary); }
+    input {
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 13px;
+      outline: none;
+      width: 100%;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .profile-btn, .theme-toggle {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      cursor: pointer;
+      border-radius: 12px;
+      transition: all 0.2s;
+      
+      &:hover { 
+        color: var(--text-primary); 
+        background: var(--item-hover);
+      }
+    }
+  }
+}
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 300px;
+  padding: 24px;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-glow {
+  padding: 4px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2));
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(99,102,241,0.1);
+}
+
+.avatar-large {
+  width: 64px;
+  height: 64px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+}
+
+.profile-tag {
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  text-align: left;
+}
+
+.grid-item label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.grid-item p {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.profile-footer {
+  padding-top: 10px;
+}
+
+.action-btn-outline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-btn-outline:hover {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+/* Animations */
+.animate-in-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-theme='dark'] .profile-dropdown {
+  background: rgba(30, 30, 40, 0.8);
+}
+
+.content-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+}

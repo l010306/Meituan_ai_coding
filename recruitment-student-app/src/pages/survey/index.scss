@@ -1,0 +1,182 @@
+.survey-container {
+  min-height: 100vh;
+  background: #f7f9fc;
+  padding-bottom: 40px;
+
+  .progress-bar {
+    height: 4px;
+    background: #e5e7eb;
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #111827, #374151);
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+  }
+
+  .step {
+    padding: 32px 20px;
+
+    .question {
+      display: block;
+      font-size: 24px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .question-sub {
+      display: block;
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 28px;
+    }
+
+    .sub-question {
+      display: block;
+      font-size: 17px;
+      font-weight: 700;
+      color: #111827;
+      margin: 32px 0 16px;
+    }
+
+    // Interest grid
+    .interest-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+
+      .interest-chip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 14px 8px;
+        transition: all 0.2s;
+
+        &.selected {
+          border-color: #111827;
+          background: #f0f0f0;
+        }
+
+        .chip-emoji { font-size: 24px; margin-bottom: 6px; }
+        .chip-label { font-size: 12px; font-weight: 600; color: #374151; }
+      }
+    }
+
+    // Slider section
+    .slider-section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 4px;
+
+      .slider-value {
+        display: block;
+        font-size: 28px;
+        font-weight: 800;
+        color: #111827;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+
+      .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        font-size: 11px;
+        color: #9ca3af;
+      }
+    }
+
+    // Commitment cards
+    .commitment-options {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 32px;
+
+      .commitment-card {
+        flex: 1;
+        background: #fff;
+        border: 2px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 16px 10px;
+        text-align: center;
+        transition: all 0.2s;
+
+        &.selected {
+          border-color: #111827;
+          background: #f0f0f0;
+        }
+
+        .clabel { display: block; font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+        .cdesc { display: block; font-size: 11px; color: #6b7280; line-height: 1.5; }
+      }
+    }
+
+    // Personality cards
+    .personality-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+
+      .personality-card {
+        background: #fff;
+        border: 2px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 18px 20px;
+        transition: all 0.2s;
+
+        &.selected { border-color: #111827; background: #f8f8f8; }
+
+        .plabel { display: block; font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+        .pdesc { display: block; font-size: 13px; color: #6b7280; line-height: 1.5; }
+      }
+    }
+
+    // Buttons
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .next-btn {
+      height: 52px;
+      background: #111827;
+      color: #fff;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      &::after { border: none; }
+      &[disabled] { background: #d1d5db; }
+      &.flex1 { flex: 1; width: auto; }
+    }
+
+    .back-btn {
+      width: 80px;
+      height: 52px;
+      background: #f3f4f6;
+      color: #374151;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after { border: none; }
+    }
+  }
+}
