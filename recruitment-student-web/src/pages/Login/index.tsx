@@ -95,7 +95,7 @@ const Login: React.FC = () => {
              <div className="key-header">
                <span style={{ color: '#f59e0b', marginRight: '6px' }}><Icons.Zap /></span> 测试弹药：DeepSeek API
              </div>
-             <code className="key-string">sk-a938************************d2</code>
+             <code className="key-string">sk-a9387b2ada504716991db785f3c9a2d2</code>
              <p className="key-tip">使用说明：请前往社团端「工程面板」填写此 Key 以激活 AI 服务</p>
           </div>
 
