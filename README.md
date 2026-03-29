@@ -1,10 +1,9 @@
-# 🍔 美团 AI-Native 社团招新平台 🤖
+# 客户端快速启动 | 🍔 美团 AI-Native 社团招新平台 🤖
 
 <div align="center">
   <p>
-    <a href="http://47.242.249.27/"><img src="https://img.shields.io/badge/Deploy-Alibaba%20Cloud%20(HK)-blue?style=for-the-badge&logo=alibabacloud" alt="Deploy"></a>
-    <a href="http://47.242.249.27/"><img src="https://img.shields.io/badge/Tech-Spring%20Boot%20%2B%20React%20%2B%20Vite-61dafb?style=for-the-badge&logo=react" alt="Tech"></a>
-    <a href="https://platform.deepseek.com/"><img src="https://img.shields.io/badge/AI-DeepSeek%20%2B%20RAG-orange?style=for-the-badge&logo=openai" alt="AI"></a>
+    <a href="http://47.242.249.27/login"><img src="https://img.shields.io/badge/技术栈-Spring%20Boot%20%2B%20React%20%2B%20Vite-61dafb?style=for-the-badge&logo=react" alt="技术栈"></a>
+    <a href="https://platform.deepseek.com/"><img src="https://img.shields.io/badge/AI%20动力-DeepSeek%20%2B%20RAG-orange?style=for-the-badge&logo=openai" alt="AI 动力"></a>
   </p>
 </div>
 
@@ -45,11 +44,11 @@
 
 ## 🌍 云端访问 (Live Demo)
 
-服务器运行于 **Alibaba Cloud (HK)** 阿里云香港节点。
+该项目当前稳定运行于 **Alibaba Cloud (HK)** 集群。
 
-- 🚀 **[点击进入：学生端入口](http://47.242.249.27/)**
+- 🚀 **[点击进入：学生端入口](http://47.242.249.27/login)**
 - ⚙️ **[点击进入：管理端入口](http://47.242.249.27/admin/)** 
-  - *提示：请前往「工程面板」填写测试 Key 以激活 AI 服务。*
+  - *提示：请在登录页「工程面板」填写测试 Key 以激活 AI 服务。*
 
 ---
 
@@ -88,4 +87,4 @@ cd recruitment-web && npm i && npm run dev
 ---
 
 > 💡 **测试备忘**：  
-> 请在登录页使用预填的 SSO 账号。首次登录将自动触发模拟“校企数据库”同步与用户初始化。
+> 请在登录页使用预设账号。首次登录将自动触发模拟“校企数据库”同步与用户初始化。
