@@ -1,4 +1,4 @@
-# AI-Native 社团招新平台
+# AI-Native 社团招新平台（维护截止：2026-04-30）
 
 <div align="center">
   <p>
